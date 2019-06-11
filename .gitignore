@@ -1,0 +1,10 @@
+# Generated files
+**/dist/
+**/node_modules/**
+coverage/
+.DS_Store
+docs/assets/
+# Build directories
+cjs/
+es/
+umd/

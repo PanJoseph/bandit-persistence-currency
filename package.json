@@ -1,0 +1,72 @@
+{
+  "name": "bandit-persistence",
+  "version": "0.1.0",
+  "description": "Test persistence module for Bandit",
+  "main": "cjs/zesty.js",
+  "unpkg": "umd/zesty.js",
+  "module": "es/zesty.js",
+  "files": [
+    "cjs",
+    "umd",
+    "es",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "docs:prep": "cp umd/zesty.js docs/assets/zesty.js",
+    "docs": "npm run docs:prep && docsify serve ./docs",
+    "lint": "eslint src/",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "Paul Joseph",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "idb-keyval": "^3.2.0",
+    "object-assign": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "docsify-cli": "^4.3.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-import": "^2.17.1",
+    "eslint-plugin-jest": "^22.1.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "fake-indexeddb": "^2.1.0",
+    "husky": "^1.3.1",
+    "jest": "24.1.0",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
+    "rollup": "^1.9.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.2",
+    "rollup-plugin-terser": "^4.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanJoseph/bandit-persistence-currency.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PanJoseph/bandit-persistence-currency/issues"
+  },
+  "homepage": "https://github.com/PanJoseph/bandit-persistence-currency#readme"
+}
